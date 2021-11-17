@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Header from "./components/Header.jsx";
 
 function App() {
   return (
     <div className="app">
-      <h2>Gmail Clone</h2>
+      <Header></Header>
     </div>
   );
 }
