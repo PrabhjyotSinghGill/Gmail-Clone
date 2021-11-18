@@ -27,7 +27,7 @@ function Header(){
             <IconButton>
                 <NotificationsIcon></NotificationsIcon>
             </IconButton>
-            <Avatar></Avatar>
+            <Avatar src="gill.jpg"></Avatar>
         </div>
 
     </div>
