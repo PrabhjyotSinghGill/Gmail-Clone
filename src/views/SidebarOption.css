@@ -9,7 +9,12 @@
   color: #818181;
 }
 
-.sidebar__option:hover,.sidebar__option:hover > p,.sidebar__option:hover > h3 {
+.sidebar__option:hover,
+.sidebar__option:hover > p,
+.sidebar__option:hover > h3,
+.sidebarOption--active,
+.sidebarOption--active > p,
+.sidebarOption--active > h3{
   background-color: #fcecec;
   color: #c04b37;
   font-weight: 800 !important;
@@ -29,4 +34,12 @@
 .sidebar__option > p {
   display: none;
   font-weight: 300;
+}
+
+.sidebarOption--active > p {
+  display:inline !important;
+}
+
+.sidebar__option:hover > p {
+  display: inline;
 }
