@@ -48,6 +48,9 @@ function EmailList(){
             <Section Icon={PeopleIcon} title='Social' color='#1A73E8'></Section>
             <Section Icon={LocalOfferIcon} title='Promotions' color='green'></Section>
         </div>
+        <div className="emailList__list">
+            
+        </div>
     </div>
 }
 export default EmailList 
