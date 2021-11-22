@@ -1,6 +1,7 @@
 import React from 'react';
-import {Checkbox, IconButton} from "@material-ui/core"; 
 import "../views/EmailList.css";
+import EmailRow from "../components/EmailRow.jsx";
+import {Checkbox, IconButton} from "@material-ui/core"; 
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import RedoIcon from '@mui/icons-material/Redo';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
@@ -49,7 +50,13 @@ function EmailList(){
             <Section Icon={LocalOfferIcon} title='Promotions' color='green'></Section>
         </div>
         <div className="emailList__list">
-            
+            <EmailRow
+                title="Twitch"
+                subject="Hi there!"
+                description="This is a test"
+                time="10pm"
+            >
+            </EmailRow>
         </div>
     </div>
 }
