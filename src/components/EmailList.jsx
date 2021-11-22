@@ -57,6 +57,13 @@ function EmailList(){
                 time="10pm"
             >
             </EmailRow>
+            <EmailRow
+                title="Elite"
+                subject="Hi there!"
+                description="This is a test"
+                time="10pm"
+            >
+            </EmailRow>
         </div>
     </div>
 }
