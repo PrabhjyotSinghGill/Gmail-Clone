@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import SendMail from "./components/SendMail.jsx";
 import Header from "./components/Header.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import Mail from "./components/Mail.jsx";
@@ -22,6 +23,8 @@ function App() {
             </Route>
           </Switch>
         </div>
+
+        <SendMail></SendMail>
       </div>
     </Router>
   );
