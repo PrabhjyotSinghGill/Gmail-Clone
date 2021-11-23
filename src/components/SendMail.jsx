@@ -10,11 +10,19 @@ function SendMail(){
             <CloseIcon className="sendMail__close"></CloseIcon>
         </div>
         <form>
-        <input type="text"></input>
-        <input type="text"></input>
-        <input type="text"></input>
+        <input placeholder="To" type="text"></input>
+        <input placeholder="Subject" type="text"></input>
+        <input
+        placeholder="Message..." 
+        type="text" 
+        className="sendMail__message"
+        ></input>
             <div className="sendMail__options">
-                <Button>Send</Button>
+                <Button className="sendMail__send"
+                variant="contained"
+                color="primary"
+                type="submit"
+                >Send</Button>
             </div>
         </form>
     </div>;
