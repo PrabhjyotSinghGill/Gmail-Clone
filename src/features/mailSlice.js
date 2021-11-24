@@ -1,13 +1,8 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchCount } from './counterAPI';
-
-const initialState = {
-  sendMessageIsOpen:false,
-  status: 'idle',
-};
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { fetchCount } from "./counterAPI";
 
 export const incrementAsync = createAsyncThunk(
-  'counter/fetchCount',
+  "counter/fetchCount",
   async (amount) => {
     const response = await fetchCount(amount);
     return response.data;
@@ -15,8 +10,10 @@ export const incrementAsync = createAsyncThunk(
 );
 
 export const mailSlice = createSlice({
-  name: 'mail',
-  initialState,
+  name: "mail",
+  initialState: {
+    sendMessageIsOpen: true,
+  },
   reducers: {
     OpenSendMessage: (state) => {
       state.sendMessageIsOpen = true;
@@ -28,16 +25,16 @@ export const mailSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(incrementAsync.pending, (state) => {
-        state.status = 'loading';
+        state.status = "loading";
       })
       .addCase(incrementAsync.fulfilled, (state, action) => {
-        state.status = 'idle';
+        state.status = "idle";
         state.value += action.payload;
       });
   },
 });
 
-export const {openSendMessage, CloseSendMessage, incrementByAmount } = mailSlice.actions;
+export const { openSendMessage, CloseSendMessage } = mailSlice.actions;
 
 export const selectSendMessageIsOpen = (state) => state.mail.sendMessageIsOpen;
 

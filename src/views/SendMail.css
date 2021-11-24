@@ -43,6 +43,13 @@
   flex-direction: column;
 }
 
+.sendMail__error {
+  background-color: white;
+  color: red;
+  text-align: right;
+  padding: 2px;
+}
+
 .sendMail > form > input {
   height: 30px;
   padding: 10px;
