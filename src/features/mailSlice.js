@@ -12,14 +12,14 @@ export const incrementAsync = createAsyncThunk(
 export const mailSlice = createSlice({
   name: "mail",
   initialState: {
-    sendMessageIsOpen: true,
+    sendMessageIsOpen: false,
   },
   reducers: {
     OpenSendMessage: (state) => {
       state.sendMessageIsOpen = true;
     },
     CloseSendMessage: (state) => {
-      state.value = false;
+      state.sendMessageIsOpen = false;
     },
   },
   extraReducers: (builder) => {
@@ -34,7 +34,7 @@ export const mailSlice = createSlice({
   },
 });
 
-export const { openSendMessage, CloseSendMessage } = mailSlice.actions;
+export const { OpenSendMessage, CloseSendMessage } = mailSlice.actions;
 
 export const selectSendMessageIsOpen = (state) => state.mail.sendMessageIsOpen;
 
