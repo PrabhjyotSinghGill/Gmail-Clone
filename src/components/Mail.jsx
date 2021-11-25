@@ -63,13 +63,18 @@ function Mail(){
         </div>
         <div className="mail__body">
             <div className="mail__bodyHeader">
-                <h2>Subject</h2> 
+                <h2>Frontend Focus</h2> 
                 <LabelImportantIcon className="mail__important"></LabelImportantIcon>  
-                <p>Title</p>
-                <p className="mail__time">10pm</p>
+                <p>Edge puts on a Tux</p>
+                <p className="mail__time">Nov 3, 2021, 3:16 PM</p>
             </div>
             <div className="mail__message">
-                <p>This is a Message!  </p>
+                <p>Microsoft’s Edge Browser Now Stable on Linux — <br/><br/>
+                    After over a year in preview, the stable version of Edge for Linux is now available.<br/>
+                    Here's the official blog post from Microsoft covering the news. This release means <br/>
+                    Edge is now available on Windows, macOS, iOS, Android, and Linux.<br/>
+                    <br/><br/>
+                    TOM WARREN </p>
             </div>
         </div>
     </div>
