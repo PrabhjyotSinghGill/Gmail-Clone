@@ -2,6 +2,7 @@
   "name": "gmail-clone",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://prabhjyotsinghgill.github.io/Gmail-Clone/",
   "dependencies": {
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.6.0",
@@ -14,6 +15,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "firebase": "^9.6.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-hook-form": "^6.13.1",
@@ -25,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
